@@ -1,1 +1,183 @@
 /* You can add global styles to this file, and also import other style files */
+$color-black: #000000;
+$color-grey-900: #121214;
+$color-grey-800: #202024;
+$color-grey-400: #7c7c8a;
+$color-grey-200: #c4c4cc;
+$color-grey-100: #e1e1e6;
+$color-cyan-500: #81d8f7;
+$color-cyan-300: #98e1f8;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  height: 100vh;
+}
+
+.heading {
+  font-weight: 700;
+}
+
+.heading-large {
+  font-size: 32px;
+}
+
+.heading-medium {
+  font-size: 24px;
+}
+
+.heading-small {
+  font-size: 20px;
+}
+
+.text {
+  font-weight: 400;
+  color: $color-grey-100;
+}
+
+.text-large {
+  font-size: 18px;
+}
+
+.text-medium {
+  font-size: 16px;
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+.heading, .text {
+  color: $color-grey-100;
+}
+
+.bg-black {
+ background-color: $color-black;
+}
+
+.bg-grey-900 {
+ background-color: $color-grey-900;
+}
+
+.bg-grey-900 {
+ background-color: $color-grey-900;
+}
+
+.bg-grey-400 {
+ background-color: $color-grey-400;
+}
+
+.bg-grey-200 {
+ background-color: $color-grey-200;
+}
+
+.bg-grey-100 {
+ background-color: $color-grey-100;
+}
+
+.bg-cyan-500 {
+ background-color: $color-cyan-500;
+}
+
+.bg-cyan-300 {
+ background-color: $color-cyan-300;
+}
+
+.black {
+ color: $color-black;
+}
+
+.grey-900 {
+ color: $color-grey-900;
+}
+
+.grey-900 {
+ color: $color-grey-900;
+}
+
+.grey-400 {
+ color: $color-grey-400;
+}
+
+.grey-200 {
+ color: $color-grey-200;
+}
+
+.grey-100 {
+ color: $color-grey-100;
+}
+
+.cyan-500 {
+ color: $color-cyan-500;
+}
+
+.cyan-300 {
+ color: $color-cyan-300;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 16px;
+
+  input {
+    width: 100%;
+    background-color: $color-grey-800;
+    color: $color-grey-100;
+    padding: 12px 16px;
+    border-radius: 	4px;
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 14px;
+    color: $color-grey-100;
+    margin-bottom: 8px;
+  }
+}
+
+.checkbox-control {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 32px;
+
+  label {
+    font-size: 14px;
+    color: $color-grey-100;
+    margin-left: 8px;
+  }
+}
+
+.btn-primary {
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  color: $color-black;
+  padding: 12px 16px;
+  border-radius: 4px;
+  background-color: $color-cyan-500;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $color-cyan-300;
+  }
+}
+
+.btn-link {
+  font-size: 14px;
+  color: $color-grey-400;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.logotipo {
+  height: 126px;
+}

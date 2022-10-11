@@ -1,1 +1,34 @@
-<p>login works!</p>
+<div class="container bg-grey-900">
+  <div class="content">
+    <div class="header">
+      <img src="assets/angular-logotipo.svg" alt="Angular logotipo" class="logotipo">
+      <h1 class="heading heading-large">Firebase Auth + Angular</h1>
+      <h2 class="text text-large">Faça login e comece a usar!</h2>
+    </div>
+
+    <form [formGroup]="loginForm" (ngSubmit)="handleLogin()" class="login-form">
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" formControlName="email">
+      </div>
+
+      <div class="form-control">
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password" formControlName="password" minlength="6">
+      </div>
+
+      <div class="checkbox-control">
+        <input type="checkbox" name="remember-checkbox" id="remember-checkbox">
+        <label for="remember-checkbox">Lembrar de mim por 30 dias</label>
+      </div>
+
+      <button type="submit" class="btn-primary">Entrar</button>
+    </form>
+
+    <div class="footer">
+      <p class="btn-link">Esqueceu sua senha?</p>
+      <p class="btn-link">Não possui conta? Crie uma agora?</p>
+    </div>
+
+  </div>
+</div>
